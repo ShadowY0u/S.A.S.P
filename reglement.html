@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.A.S.P - Règlement</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-reglement">
+
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo">
+        <img src="favicon.png" alt="Logo USSS">
+      </div>
+      <div class="brand__name">S.A.S.P</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link nav__link--active" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="ceremonie.html">Cérémonie</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="effectif.html">Effectif</a>
+      <a class="nav__link" href="formation.html">Formation</a>
+    </nav>
+  </div>
+</header>
+
+<div class="topbar__right">
+    <div class="search">
+      <span class="search__icon" aria-hidden="true">⌕</span>
+      <input class="search__input" type="search" placeholder="Rechercher..." />
+      <span class="search__hint" aria-hidden="true">Ctrl K</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <h1 class="hero__title">Règlement</h1>
+    <p class="hero__subtitle">Lecture page par page (9 pages).</p>
+  </section>
+
+  <hr class="divider" />
+
+  <section class="card reg-viewer">
+    <div class="reg-image-wrap">
+      <!-- IMPORTANT: tes images doivent être dans /images/ et s'appeler reglement1.png ... reglement9.png -->
+      <img src="reglement2.png" alt="Règlement page 2">
+      <img src="reglement3.png" alt="Règlement page 3">
+      <img src="reglement4.png" alt="Règlement page 4">
+      <img src="reglement5.png" alt="Règlement page 5">
+      <img src="reglement6.png" alt="Règlement page 6">
+      <img src="reglement7.png" alt="Règlement page 7">
+      <img src="reglement8.png" alt="Règlement page 8">
+      <img src="reglement9.png" alt="Règlement page 9">
+    </div>
+
+    <div class="reg-toolbar">
+      <button class="reg-arrow" id="prevBtn" type="button" aria-label="Page précédente">←</button>
+
+      <div class="reg-counter">
+        Page <b id="pageNum">1</b> / <b id="pageTotal">1</b>
+      </div>
+
+      <button class="reg-arrow" id="nextBtn" type="button" aria-label="Page suivante">→</button>
+    </div>
+
+    <p class="reg-hint">Merci de lire le règlement..</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> S.A.S.P — Portail interne</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  const total = 9;
+  let current = 1;
+
+  const img = document.getElementById("regImage");
+  const pageNum = document.getElementById("pageNum");
+  const pageTotal = document.getElementById("pageTotal");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  pageTotal.textContent = total;
+
+  function update() {
+    img.src = `images/reglement${current}.png`;
+    img.alt = `Règlement page ${current}`;
+    pageNum.textContent = current;
+
+    prevBtn.disabled = current === 1;
+    nextBtn.disabled = current === total;
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (current > 1) { current--; update(); }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (current < total) { current++; update(); }
+  });
+
+  update();
+</script>
+  
+</body>
+</html>
