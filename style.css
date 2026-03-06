@@ -789,33 +789,18 @@ body {
   border-color: rgba(108,166,255,.30);
 }
 
-/* 5) Tables: rendu pro sans changer la palette */
-.table-wrap{
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: 16px;
-  overflow: hidden;
-  background: rgba(0,0,0,.16);
+.plainte-image{
+display:flex;
+justify-content:center;
+align-items:center;
+margin-top:40px;
 }
 
-.formation-table, .comms-table, .dispatch-table{
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.formation-table th, .comms-table th, .dispatch-table th{
-  background: rgba(255,255,255,.05);
-  border-bottom: 1px solid rgba(255,255,255,.10);
-  font-weight: 900;
-}
-
-.formation-table td, .comms-table td, .dispatch-table td{
-  border-bottom: 1px solid rgba(255,255,255,.06);
-}
-
-.formation-table tr:hover td,
-.comms-table tr:hover td,
-.dispatch-table tr:hover td{
-  background: rgba(108,166,255,.10);
+.plainte-image img{
+max-width:100%;
+height:auto;
+border-radius:12px;
+box-shadow:0 15px 35px rgba(0,0,0,.4);
 }
 
 /* ===== EFFECTIF (par grade) ===== */
