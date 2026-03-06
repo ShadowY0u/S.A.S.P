@@ -7,12 +7,13 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
 <header class="topbar">
   <div class="topbar__left">
     <div class="brand">
       <div class="brand__logo">
-        <img src="favicon.png" alt="Logo USSS">
+        <img src="favicon.png" alt="Logo SASP">
       </div>
       <div class="brand__name">S.A.S.P</div>
     </div>
@@ -41,71 +42,89 @@
 </header>
 
 <main class="container">
-  <section class="hero">
-    <h1 class="hero__title">Procédure</h1>
-    <p class="hero__subtitle">
-      Règles d’intervention et de fonctionnement du U.S.S.S.
-    </p>
-  </section>
+  <section class="procedure-page">
+    <div class="procedure-card">
+      <h1 class="procedure-title">Procédure d'Arrestation</h1>
+      <p class="procedure-intro">Étapes à suivre après une arrestation :</p>
 
-  <hr class="divider" />
-
-  <section class="grid grid--procedure">
-    <article class="card card--full">
-      <div class="tag"><span class="tag-dot"></span> Standard opérationnel</div>
-      <h2>Schéma d’intervention (simple)</h2>
-      <ul>
-        <li><b>1. Observation</b> : identifier la situation, sécuriser la zone.</li>
-        <li><b>2. Contact</b> : annonce claire, posture professionnelle, contrôle.</li>
-        <li><b>3. Décision</b> : appliquer la procédure adaptée (contrôle, escorte, neutralisation).</li>
-        <li><b>4. Compte-rendu</b> : rapport écrit + preuves si nécessaire.</li>
-      </ul>
-
-      <div class="split">
-        <a class="btn btn--primary" href="divisions.html">Voir les divisions →</a>
-        <a class="btn btn--primary" href="supervision.html">Règles supervision →</a>
+      <div class="procedure-step">
+        <h2>1 - Palpation de sécurité</h2>
+        <p>Commence par demander :</p>
+        <p class="procedure-quote">"Vous avez sur vous des objets dangereux ?"</p>
+        <p class="procedure-quote">"Vous avez des stupéfiants ?"</p>
+        <p>Si oui, demande-lui lesquels. Ensuite, annonce :</p>
+        <p class="procedure-quote">"Je procède à la palpation."</p>
+        <p>Si la personne est du sexe opposé, dis plutôt :</p>
+        <p class="procedure-quote">"Je procède au scan."</p>
       </div>
-    </article>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Contrôle</div>
-      <h2>Contrôle d’identité</h2>
-      <ul>
-        <li>Motif + annonce de contrôle.</li>
-        <li>Fouille / palpation selon contexte (sécurité).</li>
-        <li>Vérification informations + décision (libération / escorte / retenue).</li>
-      </ul>
-    </article>
+      <div class="procedure-step">
+        <h2>2 - Lecture des droits</h2>
+        <p>Pendant le transport ou en arrivant au poste, lis les droits :</p>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Sécurité</div>
-      <h2>Gestion périmètre</h2>
-      <ul>
-        <li>Définir zone : interne / externe / accès.</li>
-        <li>Placer points de contrôle et consignes radio.</li>
-        <li>Autorisation entrée : liste / badge / validation supervisor.</li>
-      </ul>
-    </article>
+        <div class="procedure-blockquote">
+          <p>"Madame/Monsieur [X], nous sommes le XX/XX/XXXX, il est XXhXX.</p>
+          <p>Vous êtes en état d’arrestation pour les chefs d'inculpation suivants : XXXXX.</p>
+          <p>Vous êtes placé en état d'arrestation par le San Andreas State Police. Durant votre garde à vue, vous avez le droit de garder le silence. Si vous renoncez à ce droit, tout ce que vous direz pourra être et sera utilisé contre vous devant une cour de justice.</p>
+          <p>Vous avez le droit à un avocat et d’avoir un avocat présent lors de l’interrogatoire. Si vous n’en avez pas les moyens, un avocat vous sera fourni gratuitement. Vous avez également droit à des soins médicaux, à boire et à manger au poste de police.</p>
+          <p>Durant chaque interrogatoire, et durant toute votre garde à vue, vous pourrez décider à n’importe quel moment d’exercer ces droits, de ne répondre à aucune question ou de ne faire aucune déposition.</p>
+          <p>Avez-vous compris les droits que je viens de vous lire ?</p>
+          <p>En ayant ces droits à l’esprit, voulez-vous utiliser l’un de ces droits ?"</p>
+        </div>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Radio</div>
-      <h2>Codes & communication</h2>
-      <ul>
-        <li>Messages courts, clairs, sans spam.</li>
-        <li>Priorité : sécurité, localisation, besoin renfort.</li>
-        <li>Fin d’action : “situation sous contrôle” + résumé.</li>
-      </ul>
-    </article>
+        <p>Si la personne dit non, répète jusqu’à 3 fois.</p>
+        <p>Si elle ne répond pas, considère qu’elle exerce son droit au silence.</p>
+        <p>Si elle dit oui, continue la procédure.</p>
+      </div>
 
-    <article class="card card--padded">
-      <div class="tag"><span class="tag-dot"></span> Rapport</div>
-      <h2>Compte-rendu obligatoire</h2>
-      <ul>
-        <li>Qui / quoi / où / quand.</li>
-        <li>Mesures prises + justification.</li>
-        <li>Pièces : captures, vidéo, témoins.</li>
-      </ul>
-    </article>
+      <div class="procedure-step">
+        <h2>3 - Fouille complète</h2>
+        <p>
+          Effectue une fouille complète avec la même procédure que la palpation.
+          Annonce à voix haute tout ce que tu trouves et note-les dans ton rapport.
+        </p>
+      </div>
+
+      <div class="procedure-step">
+        <h2>4 - Photo et identification</h2>
+        <p>
+          Emmène la personne en salle photo. Fais des clichés de face, de profil gauche,
+          de profil droit et de dos. Expression neutre obligatoire. Note aussi son identité.
+        </p>
+      </div>
+
+      <div class="procedure-step">
+        <h2>5 - Garde à vue</h2>
+        <p>
+          Place la personne en cellule pour 5 heures (5 minutes IRL). Pendant ce temps,
+          rédige les amendes et note le temps de garde à vue
+          en prenant en compte les 5 minutes déjà passées.
+        </p>
+      </div>
+
+      <div class="procedure-step">
+        <h2>6 - Annonce des sanctions</h2>
+        <p>
+          Retourne voir la personne et annonce-lui le total des amendes
+          ainsi que la durée de la peine.
+        </p>
+      </div>
+
+      <div class="procedure-step">
+        <h2>7 - Rapport</h2>
+        <p>
+          Remplis ton rapport sur la tablette puis sur l’intranet.
+        </p>
+      </div>
+
+      <div class="procedure-step">
+        <h2>8 - Restitution des affaires</h2>
+        <p>
+          À la fin de la garde à vue, rends les objets personnels
+          qui ne sont pas liés à un délit.
+        </p>
+      </div>
+    </div>
   </section>
 </main>
 
@@ -116,5 +135,6 @@
 <script>
   document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
