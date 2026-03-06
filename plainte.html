@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.A.S.P - Plainte</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo">
+        <img src="favicon.png" alt="Logo USSS">
+      </div>
+      <div class="brand__name">S.A.S.P</div>
+    </div>
+
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link nav__link--active" href="plainte.html">Plainte</a>
+      <a class="nav__link" href="vehicules.html">Véhicules</a>
+     <a class="nav__link" href="ceremonie.html">Cérémonie</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="effectif.html">Effectif</a>
+      <a class="nav__link" href="formation.html">Formation</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero">
+    <h1 class="hero__title">Procédure de prise de plainte</h1>
+    <p class="hero__subtitle">Neutralité • Rigueur • Respect du protocole</p>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- OBJECTIF -->
+  <section class="card">
+    <h2 class="text__title">🎯 Objectif</h2>
+    <p class="text__desc">
+      La prise de plainte doit être réalisée avec professionnalisme, impartialité et précision.
+      Chaque déclaration doit être recueillie sans jugement et dans le respect des procédures internes.
+    </p>
+  </section>
+
+  <!-- ÉTAPES -->
+  <section class="card">
+    <h2 class="text__title">📋 Étapes obligatoires</h2>
+
+    <ul class="procedure-list">
+      <li><strong>1. Accueil :</strong> Saluer la personne, se présenter et instaurer un climat calme.</li>
+      <li><strong>2. Vérification d'identité :</strong> Noter nom, prénom, matricule si applicable.</li>
+      <li><strong>3. Récit libre :</strong> Laisser la personne expliquer les faits sans interruption.</li>
+      <li><strong>4. Questions précises :</strong> Clarifier date, lieu, témoins, éléments matériels.</li>
+      <li><strong>5. Reformulation :</strong> Relire ou résumer pour confirmer l’exactitude.</li>
+      <li><strong>6. Rédaction :</strong> Rédiger un rapport structuré, factuel et sans opinion.</li>
+      <li><strong>7. Transmission :</strong> Envoyer au superviseur compétent pour traitement.</li>
+    </ul>
+  </section>
+
+  <!-- RÈGLES IMPORTANTES -->
+  <section class="card">
+    <h2 class="text__title">⚖️ Règles essentielles</h2>
+
+    <ul class="procedure-list">
+      <li>Ne jamais prendre parti.</li>
+      <li>Ne jamais minimiser les faits.</li>
+      <li>Ne pas promettre de sanction immédiate.</li>
+      <li>Rester neutre et professionnel.</li>
+      <li>Toujours documenter les preuves mentionnées.</li>
+    </ul>
+  </section>
+
+  <!-- STRUCTURE RAPPORT -->
+  <section class="card">
+    <h2 class="text__title">📝 Structure du rapport</h2>
+
+    <div class="report-structure">
+      <p><strong>Date :</strong> </p>
+      <p><strong>Agent rédacteur :</strong> </p>
+      <p><strong>Personne plaignante :</strong> </p>
+      <p><strong>Agent concerné :</strong> </p>
+      <p><strong>Description des faits :</strong> </p>
+      <p><strong>Preuves / témoins :</strong> </p>
+      <p><strong>Conclusion :</strong> Transmission à la supervision.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> S.A.S.P — Portail interne</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
