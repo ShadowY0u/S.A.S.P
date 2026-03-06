@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.A.S.P - Véhicules</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__left">
+    <div class="brand">
+      <div class="brand__logo">
+        <img src="favicon.png" alt="Logo USSS">
+      </div>
+      <div class="brand__name">S.A.S.P</div>
+    </div>
+    <nav class="nav">
+      <a class="nav__link" href="index.html">Accueil</a>
+      <a class="nav__link" href="reglement.html">Règlement</a>
+      <a class="nav__link" href="procedure.html">Procédure</a>
+      <a class="nav__link" href="communications.html">Communications</a>
+      <a class="nav__link" href="plainte.html">Plainte</a>
+      <a class="nav__link nav__link--active" href="vehicules.html">Véhicules</a>
+      <a class="nav__link" href="ceremonie.html">Cérémonie</a>
+      <a class="nav__link" href="hierarchie.html">Hiérarchie</a>
+      <a class="nav__link" href="effectif.html">Effectif</a>
+      <a class="nav__link" href="formation.html">Formation</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <div class="card page">
+    <h1 class="page__title">Véhicules</h1>
+    <p class="page__desc">
+     Les véhicules officiels du service sont actuellement en attente de réception ; les modèles définitifs seront prochainement intégrés au parc opérationnel.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> S.A.S.P</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
